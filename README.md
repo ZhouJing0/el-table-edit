@@ -10,7 +10,7 @@ npm install
 npm run serve
 ```
 
+## 备注
 
-
-
+我使用的 node 版本：v16.19.1
 
