@@ -29,9 +29,6 @@ export default {
     }
   },
   watch: {
-    mode (val) {
-      console.log(val)
-    }
   }
 }
 </script>
