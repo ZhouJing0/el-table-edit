@@ -4,33 +4,34 @@
       <el-radio-button label="RowEdit">整行编辑</el-radio-button>
       <el-radio-button label="CellEdit">当前单元格可编辑</el-radio-button>
       <el-radio-button label="ClickEdit">点击进入编辑</el-radio-button>
+      <el-radio-button label="EditTable">点击进入编辑</el-radio-button>
     </el-radio-group>
-    <div style="margin-top: 16px;">
+    <div style="margin-top: 16px">
       <component :is="mode"></component>
     </div>
   </div>
 </template>
 
 <script>
-import RowEdit from './components/RowEdit.vue'
-import CellEdit from './components/CellEdit.vue'
-import ClickEdit from './components/ClickEdit.vue'
-
+import RowEdit from "./components/RowEdit.vue";
+import CellEdit from "./components/CellEdit.vue";
+import ClickEdit from "./components/ClickEdit.vue";
+import EditTable from "./components/EditTable.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     RowEdit,
     CellEdit,
-    ClickEdit
+    ClickEdit,
+    EditTable,
   },
-  data () {
+  data() {
     return {
-      mode: 'RowEdit'
-    }
+      mode: "RowEdit",
+    };
   },
-  watch: {
-  }
-}
+  watch: {},
+};
 </script>
 
 <style>
